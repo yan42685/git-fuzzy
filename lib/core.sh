@@ -20,7 +20,8 @@ preview_window_settings() {
   PREVIEW_DIRECTION="$GF_VERTICAL_PREVIEW_LOCATION"
   PREVIEW_SIZE="$(run_bc_program "$GF_VERTICAL_PREVIEW_PERCENT_CALCULATION")"
   # NB: round the `bc -l` result
-  echo "--preview-window=$PREVIEW_DIRECTION:${PREVIEW_SIZE%%.*}%"
+  # echo "--preview-window=$PREVIEW_DIRECTION:${PREVIEW_SIZE%%.*}%"
+  echo "--preview-window=$PREVIEW_DIRECTION:60%"
 }
 
 run_bc_program() {
