@@ -8,14 +8,17 @@ define max(a, b) { if (a > b) return a else return b }
 preview_window_settings() {
   IS_VERTICAL="$(run_bc_program "__WIDTH__ / __HEIGHT__ < $GF_VERTICAL_THRESHOLD")"
 
-  if [ "$IS_VERTICAL" = '1' ]; then
-    PREVIEW_DIRECTION="$GF_VERTICAL_PREVIEW_LOCATION"
-    PREVIEW_SIZE="$(run_bc_program "$GF_VERTICAL_PREVIEW_PERCENT_CALCULATION")"
-  else
-    PREVIEW_DIRECTION="$GF_HORIZONTAL_PREVIEW_LOCATION"
-    PREVIEW_SIZE="$(run_bc_program "$GF_HORIZONTAL_PREVIEW_PERCENT_CALCULATION")"
-  fi
+  # if [ "$IS_VERTICAL" = '1' ]; then
+    # PREVIEW_DIRECTION="$GF_VERTICAL_PREVIEW_LOCATION"
+    # PREVIEW_SIZE="$(run_bc_program "$GF_VERTICAL_PREVIEW_PERCENT_CALCULATION")"
+  # else
+    # PREVIEW_DIRECTION="$GF_HORIZONTAL_PREVIEW_LOCATION"
+    # PREVIEW_SIZE="$(run_bc_program "$GF_HORIZONTAL_PREVIEW_PERCENT_CALCULATION")"
+  # fi
 
+  # 只用横向的preview
+  PREVIEW_DIRECTION="$GF_VERTICAL_PREVIEW_LOCATION"
+  PREVIEW_SIZE="$(run_bc_program "$GF_VERTICAL_PREVIEW_PERCENT_CALCULATION")"
   # NB: round the `bc -l` result
   echo "--preview-window=$PREVIEW_DIRECTION:${PREVIEW_SIZE%%.*}%"
 }
