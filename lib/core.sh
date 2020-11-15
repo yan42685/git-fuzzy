@@ -1,20 +1,5 @@
 #!/usr/bin/env bash
 
-export FZF_DEFAULT_OPTS="\
-  $FZF_DEFAULT_OPTS \
-  --border \
-  --layout=reverse \
-  --bind 'ctrl-space:toggle-preview' \
-  --bind 'ctrl-j:down' \
-  --bind 'ctrl-k:up' \
-  --bind 'ctrl-d:half-page-down' \
-  --bind 'ctrl-u:half-page-up' \
-  --bind 'ctrl-s:toggle-sort' \
-  --bind 'ctrl-e:preview-down' \
-  --bind 'ctrl-y:preview-up' \
-  --bind 'change:top' \
-  --no-height"
-
 export GF_BC_STL='
 define min(a, b) { if (a < b) return a else return b }
 define max(a, b) { if (a > b) return a else return b }
