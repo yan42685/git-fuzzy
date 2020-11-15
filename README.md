@@ -17,11 +17,13 @@ Search the log and corresponding diff at once. Notice that when you use `|` the 
 ## Installing
 
 `fzf` is **required**:
+
 ```bash
 brew install fzf
 ```
 
 ### Bash
+
 ```bash
 git clone https://github.com/bigH/git-fuzzy.git
 
@@ -30,6 +32,7 @@ echo "export PATH=\"$(pwd)/git-fuzzy/bin:\$PATH\"" >> ~/.bashrc
 ```
 
 ### ZSH
+
 ```bash
 git clone https://github.com/bigH/git-fuzzy.git
 
@@ -38,6 +41,7 @@ echo "export PATH=\"$(pwd)/git-fuzzy/bin:\$PATH\"" >> ~/.zshrc
 ```
 
 ### Fish
+
 ```
 git clone https://github.com/bigH/git-fuzzy.git
 
@@ -46,7 +50,9 @@ echo "set -x PATH (pwd)\"/git-fuzzy/bin:\$PATH\"" >> ~/.config/fish/config.fish
 ```
 
 ### Antibody
+
 Update your `.zshrc` file with the following line:
+
 ```
 antibody bundle bigH/git-fuzzy path:bin kind:path
 ```
@@ -59,31 +65,31 @@ Simply install and run `git fuzzy` and you can begin using the menu.
 
 - `git fuzzy status` (or `git fuzzy` -> `status`)
 
-    Interact with staged and unstaged changes.
+  Interact with staged and unstaged changes.
 
 - `git fuzzy branch` (or `git fuzzy` -> `branch`)
 
-    Search for, checkout and look at branches.
+  Search for, checkout and look at branches.
 
 - `git fuzzy log` (or `git fuzzy` -> `log`)
 
-    Look for commits in `git log`. Typing in the search simply filters in the usual `fzf` style.
+  Look for commits in `git log`. Typing in the search simply filters in the usual `fzf` style.
 
 - `git fuzzy reflog` (or `git fuzzy` -> `reflog`)
 
-    Look for entries in `git reflog`. Typing in the search simply filters in the usual `fzf` style.
+  Look for entries in `git reflog`. Typing in the search simply filters in the usual `fzf` style.
 
 - `git fuzzy stash` (or `git fuzzy` -> `stash`)
 
-    Look for entries in `git stash`. Typing in the search simply filters in the usual `fzf` style.
+  Look for entries in `git stash`. Typing in the search simply filters in the usual `fzf` style.
 
 - `git fuzzy diff` (or `git fuzzy` -> `diff`)
 
-    Interactively select diff subjects. Drilling down enables searching through diff contents in a diff browser.
+  Interactively select diff subjects. Drilling down enables searching through diff contents in a diff browser.
 
 - `git fuzzy pr` (or `git fuzzy` -> `pr`)
 
-    Interactively select and open/diff GitHub pull requests.
+  Interactively select and open/diff GitHub pull requests.
 
 ## Useful Information
 
