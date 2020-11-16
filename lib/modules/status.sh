@@ -11,9 +11,9 @@ GF_STATUS_HEADER='
 Type to filter. '"${WHITE}Enter${NORMAL} to ${GREEN}ACCEPT${NORMAL}"'
 
   '"${GRAY}-- (${NORMAL}*${GRAY}) editor: ${MAGENTA}${EDITOR} ${NORMAL}${GF_EDITOR_ARGS}${NORMAL}"'
-  '"                                      * ${GREEN}${BOLD}edit ✎${NORMAL}  ${WHITE}$GIT_FUZZY_STATUS_EDIT_KEY${NORMAL}"'
-   '"${GREEN}all ☑${NORMAL}  ${WHITE}Alt-A${NORMAL}     ${GREEN}stage ${BOLD}⇡${NORMAL}  ${WHITE}$GIT_FUZZY_STATUS_ADD_KEY${NORMAL}     ${RED}${BOLD}discard ✗${NORMAL}  ${WHITE}$GIT_FUZZY_STATUS_DISCARD_KEY${NORMAL}"'
-  '"${GREEN}none ☐${NORMAL}  ${WHITE}Alt-D${NORMAL}     ${GREEN}reset ${RED}${BOLD}⇣${NORMAL}  ${WHITE}$GIT_FUZZY_STATUS_RESET_KEY${NORMAL}    * ${RED}${BOLD}commit ${NORMAL}${RED}⇧${NORMAL}  ${WHITE}$GIT_FUZZY_STATUS_COMMIT_KEY${NORMAL}"'
+  '"                                      "'
+   '"   ${GREEN}all ☑${NORMAL}  ${WHITE}Ctrl-A${NORMAL}      ${GREEN}stage ${BOLD}⇡${NORMAL}  ${WHITE}$GIT_FUZZY_STATUS_ADD_KEY${NORMAL}      * ${GREEN}${BOLD}edit ✎${NORMAL}  ${WHITE}$GIT_FUZZY_STATUS_EDIT_KEY${NORMAL}"'
+  '"${RED}${BOLD}discard ✗${NORMAL}  ${WHITE}$GIT_FUZZY_STATUS_DISCARD_KEY${NORMAL}     ${GREEN}unstage ${RED}${BOLD}⇣${NORMAL}  ${WHITE}$GIT_FUZZY_STATUS_RESET_KEY${NORMAL}    * ${RED}${BOLD}commit ${NORMAL}${RED}⇧${NORMAL}  ${WHITE}$GIT_FUZZY_STATUS_COMMIT_KEY${NORMAL}"'
 
 '
 
